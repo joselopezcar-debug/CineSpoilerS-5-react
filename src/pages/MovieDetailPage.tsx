@@ -3,11 +3,19 @@ import { useParams } from "react-router-dom";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { useMovie } from "@/hooks/useMovie";
+import { useNavigate } from "react-router-dom";
+import { useTicketStore } from "@/store/ticketStore";
 
 export function MovieDetailPage() {
   const { id } = useParams();
 
   const movieId = Number(id);
+
+  const navigate = useNavigate();
+
+const addTicket = useTicketStore(
+  (state) => state.addTicket
+);
 
   const {
     data: movie,
@@ -65,7 +73,13 @@ export function MovieDetailPage() {
             </p>
           </div>
 
-          <Button className="mt-8">
+          <Button
+            className="mt-8"
+            onClick={() => {
+              addTicket(movie);
+              navigate("/checkout");
+            }}
+          >
             Buy Ticket
           </Button>
         </div>
