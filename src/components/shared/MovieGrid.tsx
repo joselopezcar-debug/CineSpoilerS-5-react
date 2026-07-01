@@ -1,0 +1,20 @@
+import type { Movie } from "@/types/movie";
+
+import { MovieCard } from "./MovieCard";
+
+interface MovieGridProps {
+  movies: Movie[];
+}
+
+export function MovieGrid({ movies }: MovieGridProps) {
+  return (
+    <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+      {movies.map((movie) => (
+        <MovieCard
+          key={movie.id}
+          movie={movie}
+        />
+      ))}
+    </div>
+  );
+}
