@@ -1,10 +1,12 @@
 # README
 
-## Creación de proyecto e instalación de shadcn
-![Imagen 1](./Images/Instalación%20de%20Shadcn.png)
-## Creación de rutas
-![Imagen 2](./Images/Creación%20de%20Rutas.png)
-## Creación de layout
-![Imagen 3](./Images/Layouts.png)
-## Homepage
-![Imagen 4](./Images/Homepage.png)
+## Clonar repositorio
+![Imagen 1](./Images/Clonar%20repo.png)
+## Levantar Proyecto
+![Imagen 2](./Images/Levantar%20proyecto.png)
+## Consumo de data TMDB
+![Imagen 3](./Images/consumir%20data%20de%20TMDB.png)
+## Implementar estado global
+![Imagen 4](./Images/Implementar%20estado%20global.png)
+## Simulación de pago
+![Imagen 4](./Images/Simulación%20de%20pago.png)
